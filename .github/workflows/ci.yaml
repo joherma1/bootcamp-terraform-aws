@@ -1,0 +1,8 @@
+---
+name: Terraform CI (validate, plan)
+on:
+  pull_request:
+  # We need to run it again on merge to main branch as we use squash commits.
+  push:
+    branches: [main]
+
